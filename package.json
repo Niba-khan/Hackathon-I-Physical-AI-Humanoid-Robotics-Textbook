@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "docusaurus": "npx docusaurus",
     "start": "npx docusaurus start",
     "build": "npx docusaurus build",
     "swizzle": "npx docusaurus swizzle",
@@ -11,8 +10,7 @@
     "clear": "npx docusaurus clear",
     "serve": "npx docusaurus serve",
     "write-translations": "npx docusaurus write-translations",
-    "write-heading-ids": "npx docusaurus write-heading-ids",
-    "vercel-build": "npm install && npm run build"
+    "write-heading-ids": "npx docusaurus write-heading-ids"
   },
   "dependencies": {
     "@docusaurus/core": "3.1.0",
