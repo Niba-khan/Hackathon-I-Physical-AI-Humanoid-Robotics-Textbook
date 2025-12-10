@@ -3,145 +3,145 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/hackathon-textbook/markdown-page',
-    component: ComponentCreator('/hackathon-textbook/markdown-page', '478'),
+    path: '/markdown-page',
+    component: ComponentCreator('/markdown-page', '6fd'),
     exact: true
   },
   {
-    path: '/hackathon-textbook/docs',
-    component: ComponentCreator('/hackathon-textbook/docs', 'e0e'),
+    path: '/docs',
+    component: ComponentCreator('/docs', '004'),
     routes: [
       {
-        path: '/hackathon-textbook/docs',
-        component: ComponentCreator('/hackathon-textbook/docs', 'cfd'),
+        path: '/docs',
+        component: ComponentCreator('/docs', 'f89'),
         routes: [
           {
-            path: '/hackathon-textbook/docs',
-            component: ComponentCreator('/hackathon-textbook/docs', '55f'),
+            path: '/docs',
+            component: ComponentCreator('/docs', 'a15'),
             routes: [
               {
-                path: '/hackathon-textbook/docs/',
-                component: ComponentCreator('/hackathon-textbook/docs/', '845'),
+                path: '/docs/',
+                component: ComponentCreator('/docs/', '2ae'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-1',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-1', 'bcf'),
+                path: '/docs/content/modules/ai-robot-brain/chapter-1',
+                component: ComponentCreator('/docs/content/modules/ai-robot-brain/chapter-1', '327'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-2',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-2', 'cb0'),
+                path: '/docs/content/modules/ai-robot-brain/chapter-2',
+                component: ComponentCreator('/docs/content/modules/ai-robot-brain/chapter-2', '53a'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-3',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-3', '79b'),
+                path: '/docs/content/modules/ai-robot-brain/chapter-3',
+                component: ComponentCreator('/docs/content/modules/ai-robot-brain/chapter-3', 'afd'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ai-robot-brain/checklists/validation-checklist',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ai-robot-brain/checklists/validation-checklist', '377'),
+                path: '/docs/content/modules/ai-robot-brain/checklists/validation-checklist',
+                component: ComponentCreator('/docs/content/modules/ai-robot-brain/checklists/validation-checklist', 'a07'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ai-robot-brain/intro',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ai-robot-brain/intro', '0de'),
+                path: '/docs/content/modules/ai-robot-brain/intro',
+                component: ComponentCreator('/docs/content/modules/ai-robot-brain/intro', 'de6'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/digital-twin/chapter-1',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/digital-twin/chapter-1', '15f'),
+                path: '/docs/content/modules/digital-twin/chapter-1',
+                component: ComponentCreator('/docs/content/modules/digital-twin/chapter-1', 'e8f'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/digital-twin/chapter-2',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/digital-twin/chapter-2', '1f1'),
+                path: '/docs/content/modules/digital-twin/chapter-2',
+                component: ComponentCreator('/docs/content/modules/digital-twin/chapter-2', '06a'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/digital-twin/chapter-3',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/digital-twin/chapter-3', 'f6c'),
+                path: '/docs/content/modules/digital-twin/chapter-3',
+                component: ComponentCreator('/docs/content/modules/digital-twin/chapter-3', '675'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/digital-twin/checklists/validation-checklist',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/digital-twin/checklists/validation-checklist', '181'),
+                path: '/docs/content/modules/digital-twin/checklists/validation-checklist',
+                component: ComponentCreator('/docs/content/modules/digital-twin/checklists/validation-checklist', '825'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/digital-twin/intro',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/digital-twin/intro', 'e31'),
+                path: '/docs/content/modules/digital-twin/intro',
+                component: ComponentCreator('/docs/content/modules/digital-twin/intro', '10e'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-1',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-1', '211'),
+                path: '/docs/content/modules/ros2-fundamentals/chapter-1',
+                component: ComponentCreator('/docs/content/modules/ros2-fundamentals/chapter-1', '07e'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-2',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-2', 'f60'),
+                path: '/docs/content/modules/ros2-fundamentals/chapter-2',
+                component: ComponentCreator('/docs/content/modules/ros2-fundamentals/chapter-2', 'd87'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-3',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-3', '6a7'),
+                path: '/docs/content/modules/ros2-fundamentals/chapter-3',
+                component: ComponentCreator('/docs/content/modules/ros2-fundamentals/chapter-3', '160'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ros2-fundamentals/checklists/validation-checklist',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ros2-fundamentals/checklists/validation-checklist', 'c94'),
+                path: '/docs/content/modules/ros2-fundamentals/checklists/validation-checklist',
+                component: ComponentCreator('/docs/content/modules/ros2-fundamentals/checklists/validation-checklist', 'cf9'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/ros2-fundamentals/intro',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/ros2-fundamentals/intro', '742'),
+                path: '/docs/content/modules/ros2-fundamentals/intro',
+                component: ComponentCreator('/docs/content/modules/ros2-fundamentals/intro', '782'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/vla/chapter-1',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/vla/chapter-1', '861'),
+                path: '/docs/content/modules/vla/chapter-1',
+                component: ComponentCreator('/docs/content/modules/vla/chapter-1', '898'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/vla/chapter-2',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/vla/chapter-2', 'b99'),
+                path: '/docs/content/modules/vla/chapter-2',
+                component: ComponentCreator('/docs/content/modules/vla/chapter-2', '253'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/vla/chapter-3',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/vla/chapter-3', '149'),
+                path: '/docs/content/modules/vla/chapter-3',
+                component: ComponentCreator('/docs/content/modules/vla/chapter-3', '772'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/vla/checklists/validation-checklist',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/vla/checklists/validation-checklist', 'b64'),
+                path: '/docs/content/modules/vla/checklists/validation-checklist',
+                component: ComponentCreator('/docs/content/modules/vla/checklists/validation-checklist', 'e64'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
               {
-                path: '/hackathon-textbook/docs/content/modules/vla/intro',
-                component: ComponentCreator('/hackathon-textbook/docs/content/modules/vla/intro', '694'),
+                path: '/docs/content/modules/vla/intro',
+                component: ComponentCreator('/docs/content/modules/vla/intro', '9c5'),
                 exact: true,
                 sidebar: "textbookSidebar"
               }
@@ -152,8 +152,8 @@ export default [
     ]
   },
   {
-    path: '/hackathon-textbook/',
-    component: ComponentCreator('/hackathon-textbook/', '980'),
+    path: '/',
+    component: ComponentCreator('/', '6ce'),
     exact: true
   },
   {

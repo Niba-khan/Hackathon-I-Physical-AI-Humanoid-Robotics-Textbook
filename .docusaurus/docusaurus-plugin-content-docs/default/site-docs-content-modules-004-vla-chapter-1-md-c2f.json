@@ -5,20 +5,20 @@
   "source": "@site/docs/content/modules/004-vla/chapter-1.md",
   "sourceDirName": "content/modules/004-vla",
   "slug": "/content/modules/vla/chapter-1",
-  "permalink": "/hackathon-textbook/docs/content/modules/vla/chapter-1",
+  "permalink": "/docs/content/modules/vla/chapter-1",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/content/modules/004-vla/chapter-1.md",
+  "editUrl": "https://github.com/Niba-khan/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/tree/main/docs/content/modules/004-vla/chapter-1.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "textbookSidebar",
   "previous": {
     "title": "Module 4: Vision-Language-Action (VLA)",
-    "permalink": "/hackathon-textbook/docs/content/modules/vla/intro"
+    "permalink": "/docs/content/modules/vla/intro"
   },
   "next": {
     "title": "Chapter 2: Voice-to-Action (Whisper) - Voice Capture, Transcription, Intent Extraction",
-    "permalink": "/hackathon-textbook/docs/content/modules/vla/chapter-2"
+    "permalink": "/docs/content/modules/vla/chapter-2"
   }
 }

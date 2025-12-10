@@ -1,118 +1,118 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/hackathon-textbook/docs",
+      "path": "/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/hackathon-textbook/docs",
+          "path": "/docs",
           "mainDocId": "intro",
           "docs": [
             {
               "id": "content/modules/ai-robot-brain/chapter-1",
-              "path": "/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-1",
+              "path": "/docs/content/modules/ai-robot-brain/chapter-1",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/ai-robot-brain/chapter-2",
-              "path": "/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-2",
+              "path": "/docs/content/modules/ai-robot-brain/chapter-2",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/ai-robot-brain/chapter-3",
-              "path": "/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-3",
+              "path": "/docs/content/modules/ai-robot-brain/chapter-3",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/ai-robot-brain/checklists/validation-checklist",
-              "path": "/hackathon-textbook/docs/content/modules/ai-robot-brain/checklists/validation-checklist",
+              "path": "/docs/content/modules/ai-robot-brain/checklists/validation-checklist",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/ai-robot-brain/intro",
-              "path": "/hackathon-textbook/docs/content/modules/ai-robot-brain/intro",
+              "path": "/docs/content/modules/ai-robot-brain/intro",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/digital-twin/chapter-1",
-              "path": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-1",
+              "path": "/docs/content/modules/digital-twin/chapter-1",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/digital-twin/chapter-2",
-              "path": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-2",
+              "path": "/docs/content/modules/digital-twin/chapter-2",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/digital-twin/chapter-3",
-              "path": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-3",
+              "path": "/docs/content/modules/digital-twin/chapter-3",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/digital-twin/checklists/validation-checklist",
-              "path": "/hackathon-textbook/docs/content/modules/digital-twin/checklists/validation-checklist",
+              "path": "/docs/content/modules/digital-twin/checklists/validation-checklist",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/digital-twin/intro",
-              "path": "/hackathon-textbook/docs/content/modules/digital-twin/intro",
+              "path": "/docs/content/modules/digital-twin/intro",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/ros2-fundamentals/chapter-1",
-              "path": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-1",
+              "path": "/docs/content/modules/ros2-fundamentals/chapter-1",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/ros2-fundamentals/chapter-2",
-              "path": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-2",
+              "path": "/docs/content/modules/ros2-fundamentals/chapter-2",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/ros2-fundamentals/chapter-3",
-              "path": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-3",
+              "path": "/docs/content/modules/ros2-fundamentals/chapter-3",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/ros2-fundamentals/checklists/validation-checklist",
-              "path": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/checklists/validation-checklist",
+              "path": "/docs/content/modules/ros2-fundamentals/checklists/validation-checklist",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/ros2-fundamentals/intro",
-              "path": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/intro",
+              "path": "/docs/content/modules/ros2-fundamentals/intro",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/vla/chapter-1",
-              "path": "/hackathon-textbook/docs/content/modules/vla/chapter-1",
+              "path": "/docs/content/modules/vla/chapter-1",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/vla/chapter-2",
-              "path": "/hackathon-textbook/docs/content/modules/vla/chapter-2",
+              "path": "/docs/content/modules/vla/chapter-2",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/vla/chapter-3",
-              "path": "/hackathon-textbook/docs/content/modules/vla/chapter-3",
+              "path": "/docs/content/modules/vla/chapter-3",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/vla/checklists/validation-checklist",
-              "path": "/hackathon-textbook/docs/content/modules/vla/checklists/validation-checklist",
+              "path": "/docs/content/modules/vla/checklists/validation-checklist",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "content/modules/vla/intro",
-              "path": "/hackathon-textbook/docs/content/modules/vla/intro",
+              "path": "/docs/content/modules/vla/intro",
               "sidebar": "textbookSidebar"
             },
             {
               "id": "intro",
-              "path": "/hackathon-textbook/docs/",
+              "path": "/docs/",
               "sidebar": "textbookSidebar"
             }
           ],
@@ -120,7 +120,7 @@
           "sidebars": {
             "textbookSidebar": {
               "link": {
-                "path": "/hackathon-textbook/docs/",
+                "path": "/docs/",
                 "label": "intro"
               }
             }

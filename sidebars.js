@@ -6,7 +6,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Introduction',
-      items: ['intro'], // keep intro.md at root of /docs
+      items: ['intro'], // intro.md at root of /docs
       collapsed: false,
     },
 

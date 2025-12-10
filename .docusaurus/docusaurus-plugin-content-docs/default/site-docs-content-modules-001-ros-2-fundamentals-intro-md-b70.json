@@ -5,10 +5,10 @@
   "source": "@site/docs/content/modules/001-ros2-fundamentals/intro.md",
   "sourceDirName": "content/modules/001-ros2-fundamentals",
   "slug": "/content/modules/ros2-fundamentals/intro",
-  "permalink": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/intro",
+  "permalink": "/docs/content/modules/ros2-fundamentals/intro",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/content/modules/001-ros2-fundamentals/intro.md",
+  "editUrl": "https://github.com/Niba-khan/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/tree/main/docs/content/modules/001-ros2-fundamentals/intro.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -18,10 +18,10 @@
   "sidebar": "textbookSidebar",
   "previous": {
     "title": "Physical AI & Humanoid Robotics - AI-Native Textbook",
-    "permalink": "/hackathon-textbook/docs/"
+    "permalink": "/docs/"
   },
   "next": {
     "title": "Chapter 1: What ROS 2 Is and Why Middleware Matters for Humanoid Robots",
-    "permalink": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-1"
+    "permalink": "/docs/content/modules/ros2-fundamentals/chapter-1"
   }
 }

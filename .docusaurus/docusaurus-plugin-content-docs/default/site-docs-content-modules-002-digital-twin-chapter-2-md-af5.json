@@ -5,20 +5,20 @@
   "source": "@site/docs/content/modules/002-digital-twin/chapter-2.md",
   "sourceDirName": "content/modules/002-digital-twin",
   "slug": "/content/modules/digital-twin/chapter-2",
-  "permalink": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-2",
+  "permalink": "/docs/content/modules/digital-twin/chapter-2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/content/modules/002-digital-twin/chapter-2.md",
+  "editUrl": "https://github.com/Niba-khan/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/tree/main/docs/content/modules/002-digital-twin/chapter-2.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "textbookSidebar",
   "previous": {
     "title": "Chapter 1: Digital Twin Concepts - Purpose, Value, and Role in Humanoid Robotics",
-    "permalink": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-1"
+    "permalink": "/docs/content/modules/digital-twin/chapter-1"
   },
   "next": {
     "title": "Chapter 3: Unity High-Fidelity Rendering & Interaction - Realistic Rendering, Human-Robot Interaction Scenes, Gazebo-Unity Bridging",
-    "permalink": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-3"
+    "permalink": "/docs/content/modules/digital-twin/chapter-3"
   }
 }

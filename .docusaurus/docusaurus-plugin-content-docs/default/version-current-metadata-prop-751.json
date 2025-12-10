@@ -16,7 +16,7 @@
           {
             "type": "link",
             "label": "Physical AI & Humanoid Robotics - AI-Native Textbook",
-            "href": "/hackathon-textbook/docs/",
+            "href": "/docs/",
             "docId": "intro",
             "unlisted": false
           }
@@ -32,28 +32,28 @@
           {
             "type": "link",
             "label": "Module 1: ROS 2 Fundamentals",
-            "href": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/intro",
+            "href": "/docs/content/modules/ros2-fundamentals/intro",
             "docId": "content/modules/ros2-fundamentals/intro",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 1: What ROS 2 Is and Why Middleware Matters for Humanoid Robots",
-            "href": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-1",
+            "href": "/docs/content/modules/ros2-fundamentals/chapter-1",
             "docId": "content/modules/ros2-fundamentals/chapter-1",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 2: Hands-on with Nodes, Publishers, Subscribers, Services, Message Flow",
-            "href": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-2",
+            "href": "/docs/content/modules/ros2-fundamentals/chapter-2",
             "docId": "content/modules/ros2-fundamentals/chapter-2",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 3: Python Agents → ROS 2 Control with rclpy + Intro to URDF",
-            "href": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-3",
+            "href": "/docs/content/modules/ros2-fundamentals/chapter-3",
             "docId": "content/modules/ros2-fundamentals/chapter-3",
             "unlisted": false
           },
@@ -66,7 +66,7 @@
               {
                 "type": "link",
                 "label": "Module 1 Validation Checklist",
-                "href": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/checklists/validation-checklist",
+                "href": "/docs/content/modules/ros2-fundamentals/checklists/validation-checklist",
                 "docId": "content/modules/ros2-fundamentals/checklists/validation-checklist",
                 "unlisted": false
               }
@@ -83,28 +83,28 @@
           {
             "type": "link",
             "label": "Module 2: Digital Twin (Gazebo & Unity)",
-            "href": "/hackathon-textbook/docs/content/modules/digital-twin/intro",
+            "href": "/docs/content/modules/digital-twin/intro",
             "docId": "content/modules/digital-twin/intro",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 1: Digital Twin Concepts - Purpose, Value, and Role in Humanoid Robotics",
-            "href": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-1",
+            "href": "/docs/content/modules/digital-twin/chapter-1",
             "docId": "content/modules/digital-twin/chapter-1",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 2: Gazebo Simulation Fundamentals - Physics Engine Basics, Environment Setup, Sensor Integration",
-            "href": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-2",
+            "href": "/docs/content/modules/digital-twin/chapter-2",
             "docId": "content/modules/digital-twin/chapter-2",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 3: Unity High-Fidelity Rendering & Interaction - Realistic Rendering, Human-Robot Interaction Scenes, Gazebo-Unity Bridging",
-            "href": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-3",
+            "href": "/docs/content/modules/digital-twin/chapter-3",
             "docId": "content/modules/digital-twin/chapter-3",
             "unlisted": false
           },
@@ -117,7 +117,7 @@
               {
                 "type": "link",
                 "label": "Module 2 Validation Checklist",
-                "href": "/hackathon-textbook/docs/content/modules/digital-twin/checklists/validation-checklist",
+                "href": "/docs/content/modules/digital-twin/checklists/validation-checklist",
                 "docId": "content/modules/digital-twin/checklists/validation-checklist",
                 "unlisted": false
               }
@@ -134,28 +134,28 @@
           {
             "type": "link",
             "label": "Module 3: AI-Robot Brain (NVIDIA Isaac)",
-            "href": "/hackathon-textbook/docs/content/modules/ai-robot-brain/intro",
+            "href": "/docs/content/modules/ai-robot-brain/intro",
             "docId": "content/modules/ai-robot-brain/intro",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 1: Intro to NVIDIA Isaac™ - Overview, Humanoid Capabilities, ROS 2 Integration",
-            "href": "/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-1",
+            "href": "/docs/content/modules/ai-robot-brain/chapter-1",
             "docId": "content/modules/ai-robot-brain/chapter-1",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 2: Perception & Synthetic Data - Photorealistic Scenes, Sensor Simulation, Dataset Generation",
-            "href": "/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-2",
+            "href": "/docs/content/modules/ai-robot-brain/chapter-2",
             "docId": "content/modules/ai-robot-brain/chapter-2",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 3: Navigation & Path Planning - Isaac ROS VSLAM, Nav2 Integration, Humanoid Path Execution",
-            "href": "/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-3",
+            "href": "/docs/content/modules/ai-robot-brain/chapter-3",
             "docId": "content/modules/ai-robot-brain/chapter-3",
             "unlisted": false
           },
@@ -168,7 +168,7 @@
               {
                 "type": "link",
                 "label": "Module 3 Validation Checklist",
-                "href": "/hackathon-textbook/docs/content/modules/ai-robot-brain/checklists/validation-checklist",
+                "href": "/docs/content/modules/ai-robot-brain/checklists/validation-checklist",
                 "docId": "content/modules/ai-robot-brain/checklists/validation-checklist",
                 "unlisted": false
               }
@@ -185,28 +185,28 @@
           {
             "type": "link",
             "label": "Module 4: Vision-Language-Action (VLA)",
-            "href": "/hackathon-textbook/docs/content/modules/vla/intro",
+            "href": "/docs/content/modules/vla/intro",
             "docId": "content/modules/vla/intro",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 1: Intro to Vision-Language-Action - VLA Concepts, LLM Role in Humanoid Control",
-            "href": "/hackathon-textbook/docs/content/modules/vla/chapter-1",
+            "href": "/docs/content/modules/vla/chapter-1",
             "docId": "content/modules/vla/chapter-1",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 2: Voice-to-Action (Whisper) - Voice Capture, Transcription, Intent Extraction",
-            "href": "/hackathon-textbook/docs/content/modules/vla/chapter-2",
+            "href": "/docs/content/modules/vla/chapter-2",
             "docId": "content/modules/vla/chapter-2",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Chapter 3: Cognitive Planning & Capstone - NL → ROS 2 Action Mapping, Navigation, Obstacle Avoidance, Object ID & Manipulation",
-            "href": "/hackathon-textbook/docs/content/modules/vla/chapter-3",
+            "href": "/docs/content/modules/vla/chapter-3",
             "docId": "content/modules/vla/chapter-3",
             "unlisted": false
           },
@@ -219,7 +219,7 @@
               {
                 "type": "link",
                 "label": "Module 4 Validation Checklist",
-                "href": "/hackathon-textbook/docs/content/modules/vla/checklists/validation-checklist",
+                "href": "/docs/content/modules/vla/checklists/validation-checklist",
                 "docId": "content/modules/vla/checklists/validation-checklist",
                 "unlisted": false
               }

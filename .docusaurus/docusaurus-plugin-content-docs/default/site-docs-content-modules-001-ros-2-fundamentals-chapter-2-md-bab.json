@@ -5,20 +5,20 @@
   "source": "@site/docs/content/modules/001-ros2-fundamentals/chapter-2.md",
   "sourceDirName": "content/modules/001-ros2-fundamentals",
   "slug": "/content/modules/ros2-fundamentals/chapter-2",
-  "permalink": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-2",
+  "permalink": "/docs/content/modules/ros2-fundamentals/chapter-2",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/content/modules/001-ros2-fundamentals/chapter-2.md",
+  "editUrl": "https://github.com/Niba-khan/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/tree/main/docs/content/modules/001-ros2-fundamentals/chapter-2.md",
   "tags": [],
   "version": "current",
   "frontMatter": {},
   "sidebar": "textbookSidebar",
   "previous": {
     "title": "Chapter 1: What ROS 2 Is and Why Middleware Matters for Humanoid Robots",
-    "permalink": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-1"
+    "permalink": "/docs/content/modules/ros2-fundamentals/chapter-1"
   },
   "next": {
     "title": "Chapter 3: Python Agents → ROS 2 Control with rclpy + Intro to URDF",
-    "permalink": "/hackathon-textbook/docs/content/modules/ros2-fundamentals/chapter-3"
+    "permalink": "/docs/content/modules/ros2-fundamentals/chapter-3"
   }
 }
