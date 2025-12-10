@@ -1,0 +1,24 @@
+{
+  "id": "content/modules/digital-twin/chapter-1",
+  "title": "Chapter 1: Digital Twin Concepts - Purpose, Value, and Role in Humanoid Robotics",
+  "description": "Objectives",
+  "source": "@site/docs/content/modules/002-digital-twin/chapter-1.md",
+  "sourceDirName": "content/modules/002-digital-twin",
+  "slug": "/content/modules/digital-twin/chapter-1",
+  "permalink": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/content/modules/002-digital-twin/chapter-1.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "textbookSidebar",
+  "previous": {
+    "title": "Module 2: Digital Twin (Gazebo & Unity)",
+    "permalink": "/hackathon-textbook/docs/content/modules/digital-twin/intro"
+  },
+  "next": {
+    "title": "Chapter 2: Gazebo Simulation Fundamentals - Physics Engine Basics, Environment Setup, Sensor Integration",
+    "permalink": "/hackathon-textbook/docs/content/modules/digital-twin/chapter-2"
+  }
+}

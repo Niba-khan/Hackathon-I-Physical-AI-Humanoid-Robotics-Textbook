@@ -1,0 +1,78 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+/* -------------------- HERO BANNER -------------------- */
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------------------- MODULES SECTION -------------------- */
+
+/* -------------------- MODULES SECTION -------------------- */
+.wrapper {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem; /* thoda bada heading */
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.moduleGrid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* cards thode bade */
+  justify-items: center;
+}
+
+.card {
+  background: linear-gradient(135deg, #e0f7fa, #04bfd8); /* theme-ish gradient */
+  border: none;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 320px; /* thoda bada card */
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #80deea, #26c6da); /* hover gradient */
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}

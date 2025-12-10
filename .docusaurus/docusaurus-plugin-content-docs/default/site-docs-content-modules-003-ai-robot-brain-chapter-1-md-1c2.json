@@ -1,0 +1,24 @@
+{
+  "id": "content/modules/ai-robot-brain/chapter-1",
+  "title": "Chapter 1: Intro to NVIDIA Isaac™ - Overview, Humanoid Capabilities, ROS 2 Integration",
+  "description": "Objectives",
+  "source": "@site/docs/content/modules/003-ai-robot-brain/chapter-1.md",
+  "sourceDirName": "content/modules/003-ai-robot-brain",
+  "slug": "/content/modules/ai-robot-brain/chapter-1",
+  "permalink": "/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-1",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/content/modules/003-ai-robot-brain/chapter-1.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "textbookSidebar",
+  "previous": {
+    "title": "Module 3: AI-Robot Brain (NVIDIA Isaac)",
+    "permalink": "/hackathon-textbook/docs/content/modules/ai-robot-brain/intro"
+  },
+  "next": {
+    "title": "Chapter 2: Perception & Synthetic Data - Photorealistic Scenes, Sensor Simulation, Dataset Generation",
+    "permalink": "/hackathon-textbook/docs/content/modules/ai-robot-brain/chapter-2"
+  }
+}

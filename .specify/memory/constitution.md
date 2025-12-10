@@ -1,55 +1,64 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+## Sync Impact Report
+<!--
+Version change: 0.0.0 → 1.0.0
+Added sections: Core Principles (6), Standards, Scope, Success Criteria
+Removed sections: None
+Modified principles: None (new document)
+Templates requiring updates: ⚠ pending [.specify/templates/plan-template.md, .specify/templates/spec-template.md, .specify/templates/tasks-template.md]
+Follow-up TODOs: None
+-->
+
+# Physical AI & Humanoid Robotics — AI-Native Textbook + RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### AI-Native, Spec-First Workflow
+AI-native, spec-first workflow with auto-validation. All development begins with comprehensive specifications that are automatically validated against implementation. This ensures every feature is planned, documented, and verified before implementation, reducing technical debt and improving maintainability.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Beginner-Intermediate Friendly Explanations
+Beginner–intermediate friendly robotics/AI explanations. All content must be accessible to learners with varying skill levels, using clear language, progressive complexity, and intuitive analogies. Technical concepts should be explained with sufficient context to help readers understand without requiring extensive prior knowledge.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Technical Content Verification
+All technical content verified against ROS 2, Gazebo, Isaac, VLA docs. Every claim, code snippet, or tutorial must be validated against official documentation and tested implementations from ROS 2, Gazebo, NVIDIA Isaac, and Vision-Language-Action frameworks. This ensures accuracy and prevents the dissemination of incorrect technical information.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Modular MDX Structure
+Modular MDX chapters with consistent structure and terminology. Content must be organized into reusable, self-contained modules using MDX format. Each module follows standardized templates with consistent terminology, layout, and presentation to ensure a cohesive learning experience across all sections.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Full Transparency in Decision Making
+Full transparency: every decision captured in Spec-Kit. All architectural decisions, development choices, and content modifications must be documented using the Spec-Kit framework. This creates an auditable trail of reasoning that helps maintain consistency and enables future contributors to understand historical context.
 
-### [PRINCIPLE_6_NAME]
+### Zero Hallucination Safety Policy
+Safety: zero hallucinated robotics/physics/kinematics claims. The textbook and RAG chatbot must never generate unverified technical information or make claims about physics, kinematics, or robotics behaviors that are not grounded in accurate models or real-world evidence. Factually correct information is paramount for safety in physical AI applications.
 
+## Standards
+All content and implementation must adhere to the following standards:
+- MDX with reusable components: diagrams, callouts, code blocks
+- RAG chatbot answers strictly from book content/user-selected text
+- Infrastructure: Neon Postgres + Qdrant + FastAPI (typed) + OpenAI models
+- Deployment: GitHub Pages with CI/CD defined in /sp.deploy
+- UI: Tailwind + shadcn/ui only; accessible, dark/light mode
+- Diagrams: AI-generated or open-license only
 
-[PRINCIPLE__DESCRIPTION]
+## Scope
+The project encompasses five core modules:
+1. Module 1 — ROS 2 Nervous System
+2. Module 2 — Digital Twin (Gazebo + Unity)
+3. Module 3 — AI-Robot Brain (NVIDIA Isaac)
+4. Module 4 — Vision-Language-Action (VLA)
+5. Capstone — Autonomous Humanoid Robot
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+Each module must include hands-on tasks and validation checklists to ensure learners can apply theoretical knowledge in practical scenarios.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Success Criteria
+The project achieves success when:
+- Docusaurus build/deploy passes without errors
+- RAG chatbot produces factual, book-grounded answers
+- FastAPI + Neon + Qdrant fully operational and type-safe
+- Each module includes hands-on tasks + validation checklists
+- Capstone pipeline works: voice → plan → navigate → identify → manipulate
+- All Spec-Kit artifacts validated: /sp.specify, /sp.plan, /sp.arch, /sp.schema, /sp.test
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution serves as the governing document for all project activities. All development practices, code reviews, and content creation must comply with the stated principles. Amendments to this constitution require documentation of rationale, community review, and approval before implementation. This document supersedes all other practices and guidelines within the project.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-08 | **Last Amended**: 2025-12-08
