@@ -24,6 +24,7 @@ const config = {
       'classic',
       {
         docs: {
+          // @ts-ignore
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/Niba-khan/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/tree/main/',
@@ -32,6 +33,7 @@ const config = {
           showReadingTime: true,
         },
         theme: {
+          // @ts-ignore
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
