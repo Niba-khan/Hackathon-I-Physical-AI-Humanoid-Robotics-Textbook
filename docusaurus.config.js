@@ -53,7 +53,7 @@ const config = {
           type: 'docSidebar',
           sidebarId: 'textbookSidebar',
           position: 'left',
-          label: 'Modules',
+          label: 'Textbook',
         },
         {
           href: 'https://github.com/Niba-khan/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook',
