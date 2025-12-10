@@ -5,6 +5,7 @@
   "scripts": {
     "start": "npx docusaurus start",
     "build": "npx docusaurus build",
+    "build:chmod": "chmod +x node_modules/.bin/docusaurus && npx docusaurus build",
     "swizzle": "npx docusaurus swizzle",
     "deploy": "npx docusaurus deploy",
     "clear": "npx docusaurus clear",
