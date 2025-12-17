@@ -5,8 +5,8 @@ const config = {
   tagline: 'ROS 2 • Gazebo • Isaac • Digital Twin • Vision-Language-Action Robotics',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-site.vercel.app',
-  baseUrl: '/',
+  url: 'https://niba-khan.github.io',
+  baseUrl: '/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/',
 
   organizationName: 'Niba-khan',
   projectName: 'Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook',
@@ -28,6 +28,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/Niba-khan/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/tree/main/',
+          // Add the chatbot integration script
+          beforeDefaultRemarkPlugins: [],
         },
         blog: {
           showReadingTime: true,
@@ -40,8 +42,25 @@ const config = {
     ],
   ],
 
+  // Add the chatbot integration script to be loaded on all pages
+  themes: [],
+  plugins: [
+    // Add the chatbot script to be included on all pages
+    () => ({
+      name: 'chatbot-plugin',
+      injectHtmlTags: () => ({
+        postBodyTags: [`<script src="/js/chat-embed.js"></script>`],
+      }),
+    }),
+  ],
+
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
       logo: {

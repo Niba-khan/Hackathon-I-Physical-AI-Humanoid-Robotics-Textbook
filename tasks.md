@@ -50,11 +50,11 @@ description: "Task list template for feature implementation"
 
 - [X] T001 Create project structure per implementation plan
 - [X] T002 Initialize Docusaurus project with dependencies
-- [ ] T003 [P] Configure linting and formatting tools
-- [ ] T004 Set up GitHub Pages deployment configuration
-- [ ] T005 Initialize backend project with FastAPI dependencies
-- [ ] T006 Set up project-wide configuration management
-- [ ] T007 Create initial project documentation
+- [X] T003 [P] Configure linting and formatting tools
+- [X] T004 Set up GitHub Pages deployment configuration
+- [X] T005 Initialize backend project with FastAPI dependencies
+- [X] T006 Set up project-wide configuration management
+- [X] T007 Create initial project documentation
 
 ---
 
@@ -66,15 +66,15 @@ description: "Task list template for feature implementation"
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T008 Setup database schema and migrations framework for backend
-- [ ] T009 [P] Implement authentication/authorization framework
-- [ ] T010 [P] Setup API routing and middleware structure
-- [ ] T011 Create base models/entities that all stories depend on
-- [ ] T012 Configure error handling and logging infrastructure
-- [ ] T013 Setup environment configuration management
-- [ ] T014 [P] Create reusable UI components framework (Tailwind + shadcn/ui)
-- [ ] T015 [P] Implement content chunking and indexing pipeline
-- [ ] T016 Setup RAG system infrastructure (Neon Postgres + Qdrant)
+- [X] T008 Setup database schema and migrations framework for backend
+- [X] T009 [P] Implement authentication/authorization framework
+- [X] T010 [P] Setup API routing and middleware structure
+- [X] T011 Create base models/entities that all stories depend on
+- [X] T012 Configure error handling and logging infrastructure
+- [X] T013 Setup environment configuration management
+- [X] T014 [P] Create reusable UI components framework (Tailwind + shadcn/ui)
+- [X] T015 [P] Implement content chunking and indexing pipeline
+- [X] T016 Setup RAG system infrastructure (Neon Postgres + Qdrant)
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -111,8 +111,8 @@ Examples of foundational tasks (adjust based on your project):
 - [X] T032 [US1] Create Module 3 chapter (AI-Robot Brain) in docs/content/modules/003-ai-robot-brain/
 - [X] T033 [US1] Create Module 4 chapter (VLA) in docs/content/modules/004-vla/
 - [X] T034 [US1] Create validation checklists for each module in docs/content/modules/*/checklists/
-- [ ] T035 [US1] Implement dark/light mode support in docs/src/theme/
-- [ ] T036 [US1] Add accessibility features to all components
+- [X] T035 [US1] Implement dark/light mode support in docs/src/theme/
+- [X] T036 [US1] Add accessibility features to all components
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -182,17 +182,17 @@ Examples of foundational tasks (adjust based on your project):
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T061 [P] Documentation updates in docs/
-- [ ] T062 Code cleanup and refactoring
-- [ ] T063 Performance optimization across all stories
+- [X] T061 [P] Documentation updates in docs/
+- [X] T062 Code cleanup and refactoring
+- [X] T063 Performance optimization across all stories
 - [ ] T064 [P] Additional unit tests (if requested) in tests/unit/
-- [ ] T065 Security hardening
-- [ ] T066 Run quickstart validation
-- [ ] T067 Final deployment to GitHub Pages
-- [ ] T068 Backend deployment configuration
-- [ ] T069 Performance testing and optimization
-- [ ] T070 Accessibility compliance check
-- [ ] T071 Content accuracy verification against official docs
+- [X] T065 Security hardening
+- [X] T066 Run quickstart validation
+- [X] T067 Final deployment to GitHub Pages
+- [X] T068 Backend deployment configuration
+- [X] T069 Performance testing and optimization
+- [X] T070 Accessibility compliance check
+- [X] T071 Content accuracy verification against official docs
 
 ---
 

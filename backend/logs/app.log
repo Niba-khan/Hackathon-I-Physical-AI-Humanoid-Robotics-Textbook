@@ -1,0 +1,17 @@
+2025-12-17 22:56:44,918 - root - INFO - Using in-memory Qdrant for local development
+2025-12-17 22:56:44,930 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-12-17 22:56:44,930 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-17 22:56:51,637 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-12-17 22:57:48,849 - services.embedding_service - INFO - Embedding service initialized with model: all-MiniLM-L6-v2
+2025-12-17 22:57:48,872 - root - INFO - Using in-memory Qdrant for local development
+2025-12-17 22:57:48,890 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-12-17 22:57:48,891 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-17 22:57:55,184 - services.embedding_service - INFO - Embedding service initialized with model: all-MiniLM-L6-v2
+2025-12-17 22:58:54,322 - root - INFO - Using in-memory Qdrant for local development
+2025-12-17 22:58:54,333 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-12-17 22:58:54,333 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-17 22:59:02,128 - services.embedding_service - INFO - Embedding service initialized with model: all-MiniLM-L6-v2
+2025-12-17 22:59:02,133 - root - INFO - Using in-memory Qdrant for local development
+2025-12-17 22:59:02,144 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-12-17 22:59:02,144 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-17 22:59:07,675 - services.embedding_service - INFO - Embedding service initialized with model: all-MiniLM-L6-v2

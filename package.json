@@ -11,7 +11,11 @@
     "clear": "npx docusaurus clear",
     "serve": "npx docusaurus serve",
     "write-translations": "npx docusaurus write-translations",
-    "write-heading-ids": "npx docusaurus write-heading-ids"
+    "write-heading-ids": "npx docusaurus write-heading-ids",
+    "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "eslint --cache --ext .js,.jsx,.ts,.tsx . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@docusaurus/core": "3.1.0",
@@ -25,7 +29,12 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.1.0",
     "@docusaurus/tsconfig": "3.1.0",
-    "@docusaurus/types": "3.1.0"
+    "@docusaurus/types": "3.1.0",
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "prettier": "^3.7.4"
   },
   "browserslist": {
     "production": [
@@ -40,6 +49,6 @@
     ]
   },
   "engines": {
-    "node": "24.x"
+    "node": ">=18.0"
   }
 }
