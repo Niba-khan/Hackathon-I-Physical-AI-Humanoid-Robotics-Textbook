@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Chatbot Integration Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .chat-container {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .chat-history {
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .user-message {
+            background-color: #d4edda;
+            text-align: right;
+        }
+        .bot-message {
+            background-color: #f8f9fa;
+        }
+        .input-area {
+            display: flex;
+            gap: 10px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #ccc;
+        }
+        .mode-selector {
+            margin-bottom: 15px;
+        }
+        .sources {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+        .selected-text-area {
+            margin-top: 15px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>RAG Chatbot for AI-Native Textbook</h1>
+    
+    <div class="mode-selector">
+        <label>
+            <input type="radio" name="mode" value="book-wide" checked> Book-wide Q&A (Vector Search Enabled)
+        </label>
+        <label>
+            <input type="radio" name="mode" value="selected-text-only"> Selected-text-only Q&A (Vector Search Disabled)
+        </label>
+    </div>
+
+    <div class="selected-text-area">
+        <label for="selectedText">Selected Text (for selected-text-only mode):</label>
+        <textarea id="selectedText" placeholder="Enter text that the chatbot should answer from (required for selected-text-only mode)"></textarea>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-history" id="chatHistory"></div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Ask a question about the textbook...">
+            <button id="sendButton" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Backend API configuration
+        const BACKEND_URL = 'http://localhost:8000'; // Change this to your backend URL
+        let sessionId = null;
+
+        // Add a message to the chat history
+        function addMessageToHistory(message, isUser) {
+            const chatHistory = document.getElementById('chatHistory');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+            
+            messageDiv.innerHTML = `<div>${message}</div>`;
+            if (!isUser) {
+                // Add sources if available
+                // In a real implementation, you would parse the response to extract sources
+            }
+            
+            chatHistory.appendChild(messageDiv);
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+
+        // Send a message to the backend API
+        async function sendMessage() {
+            const userInput = document.getElementById('userInput');
+            const selectedText = document.getElementById('selectedText');
+            const modeInputs = document.getElementsByName('mode');
+            
+            const query = userInput.value.trim();
+            if (!query) return;
+
+            // Get selected mode
+            let mode = 'book-wide';
+            for (const radio of modeInputs) {
+                if (radio.checked) {
+                    mode = radio.value;
+                    break;
+                }
+            }
+
+            // Validate selected text for selected-text-only mode
+            if (mode === 'selected-text-only' && !selectedText.value.trim()) {
+                alert('Please enter selected text for selected-text-only mode');
+                return;
+            }
+
+            // Add user message to chat
+            addMessageToHistory(query, true);
+            userInput.value = '';
+            
+            // Disable send button while processing
+            const sendButton = document.getElementById('sendButton');
+            sendButton.disabled = true;
+            sendButton.textContent = 'Processing...';
+
+            try {
+                // Prepare request payload
+                const payload = {
+                    query: query,
+                    mode: mode,
+                    session_id: sessionId || null
+                };
+
+                // Include selected text if in selected-text-only mode
+                if (mode === 'selected-text-only') {
+                    payload.selected_text = selectedText.value.trim();
+                }
+
+                // Call backend API
+                const response = await fetch(`${BACKEND_URL}/api/chat`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.status} ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                
+                // Update session ID if new one was provided
+                if (!sessionId && data.session_id) {
+                    sessionId = data.session_id;
+                }
+
+                // Add bot response to chat
+                addMessageToHistory(data.response, false);
+
+                // Display sources if available
+                if (data.sources && data.sources.length > 0) {
+                    const sourcesDiv = document.createElement('div');
+                    sourcesDiv.className = 'sources';
+                    sourcesDiv.innerHTML = `<strong>Sources:</strong> ${data.sources.map(s => s.section_ref).join(', ')}`;
+                    document.querySelector('.bot-message:last-child').appendChild(sourcesDiv);
+                }
+            } catch (error) {
+                console.error('Error sending message:', error);
+                addMessageToHistory(`Error: ${error.message}`, false);
+            } finally {
+                // Re-enable send button
+                sendButton.disabled = false;
+                sendButton.textContent = 'Send';
+            }
+        }
+
+        // Allow sending message with Enter key
+        document.getElementById('userInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Initialize chat
+        addMessageToHistory('Hello! I\'m your AI assistant for this textbook. How can I help you today?', false);
+    </script>
+</body>
+</html>

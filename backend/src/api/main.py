@@ -1,44 +1,37 @@
-from fastapi import FastAPI 
-from api.v1.endpoints import query, ingest, sessions
-from config import settings
-from api.middleware.rate_limit import rate_limit_middleware
-from api.middleware.error_handler import ErrorLoggingMiddleware
-import uvicorn
+from fastapi import FastAPI
+from src.api import chat
+from fastapi.middleware.cors import CORSMiddleware
+from src.api import retrieval
+from src.core.error_handler import setup_error_handlers
+from src.core.config import settings
+import logging
 
+# Set up logging
+logging.basicConfig(level=logging.INFO)
 
-# Create the FastAPI app
+# Create FastAPI app instance
 app = FastAPI(
-    title="RAG Chatbot API",
-    description="API for the embedded RAG chatbot that answers questions based on book content",
-    version="1.0.0"
+    title=settings.app_name,
+    version=settings.app_version,
+    description="RAG Chatbot API for AI-Native Textbook"
 )
 
-# Add middleware
-app.middleware("http")(rate_limit_middleware)
-app.add_middleware(ErrorLoggingMiddleware)
+# Set up error handlers
+setup_error_handlers(app)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/"],  # In production, replace with specific origins
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 # Include API routes
-app.include_router(query.router, prefix="/api/v1", tags=["query"])
-app.include_router(ingest.router, prefix="/api/v1", tags=["ingest"])
-app.include_router(sessions.router, prefix="/api/v1", tags=["sessions"])
-
+app.include_router(chat.router, prefix="/api", tags=["chat"])
+app.include_router(retrieval.router, prefix="/api", tags=["retrieval"])
 
 @app.get("/")
 def read_root():
-    return {"message": "RAG Chatbot API is running!"}
-
-
-@app.get("/health")
-def health_check():
-    return {"status": "healthy", "message": "API is operational"}
-
-
-# For development, you can run this file directly
-if __name__ == "__main__":
-    uvicorn.run(
-        "src.main:app",
-        host="0.0.0.0",
-        port=8000,
-        reload=True
-    )
+    return {"message": "RAG Chatbot API for AI-Native Textbook", "version": settings.app_version}
