@@ -2,21 +2,23 @@
   "name": "physical-ai-humanoid-robotics-textbook",
   "version": "0.0.0",
   "private": true,
+
   "scripts": {
-    "start": "npx docusaurus start",
-    "build": "npx docusaurus build",
-    "build:chmod": "chmod +x node_modules/.bin/docusaurus && npx docusaurus build",
-    "swizzle": "npx docusaurus swizzle",
-    "deploy": "npx docusaurus deploy",
-    "clear": "npx docusaurus clear",
-    "serve": "npx docusaurus serve",
-    "write-translations": "npx docusaurus write-translations",
-    "write-heading-ids": "npx docusaurus write-heading-ids",
+    "start": "node ./node_modules/@docusaurus/core/bin/docusaurus.mjs start",
+    "build": "node ./node_modules/@docusaurus/core/bin/docusaurus.mjs build",
+    "serve": "node ./node_modules/@docusaurus/core/bin/docusaurus.mjs serve",
+    "swizzle": "node ./node_modules/@docusaurus/core/bin/docusaurus.mjs swizzle",
+    "deploy": "node ./node_modules/@docusaurus/core/bin/docusaurus.mjs deploy",
+    "clear": "node ./node_modules/@docusaurus/core/bin/docusaurus.mjs clear",
+    "write-translations": "node ./node_modules/@docusaurus/core/bin/docusaurus.mjs write-translations",
+    "write-heading-ids": "node ./node_modules/@docusaurus/core/bin/docusaurus.mjs write-heading-ids",
+
     "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx .",
-    "lint:fix": "eslint --cache --ext .js,.jsx,.ts,.tsx . --fix",
+    "lint:fix": "eslint --cache --ext .js,.jsx,.ts,.tsx --fix .",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
+
   "dependencies": {
     "@docusaurus/core": "3.1.0",
     "@docusaurus/preset-classic": "3.1.0",
@@ -26,16 +28,18 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
+
   "devDependencies": {
+    "@docusaurus/eslint-plugin": "^3.9.2",
     "@docusaurus/module-type-aliases": "3.1.0",
     "@docusaurus/tsconfig": "3.1.0",
     "@docusaurus/types": "3.1.0",
-    "@eslint/js": "^9.39.2",
-    "eslint": "^9.39.2",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-react": "^7.37.5",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
     "prettier": "^3.7.4"
   },
+
   "browserslist": {
     "production": [
       ">0.5%",
@@ -48,7 +52,8 @@
       "last 5 safari version"
     ]
   },
+
   "engines": {
-    "node": ">=18.0"
+    "node": "18.x"
   }
 }
