@@ -9,7 +9,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // ✅ VERCEL CONFIG
-  url: 'https://hackathon-i-physical-ai-humanoid-ro-six.vercel.app',
+  url: 'https://hackathon-i-physical-ai-humanoid-ro-five.vercel.app/',
   baseUrl: '/',
 
   organizationName: 'Niba-khan',
