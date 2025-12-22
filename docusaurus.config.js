@@ -1,12 +1,16 @@
+
 // @ts-check
 
+/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'PHYSICAL AI & HUMANOID ROBOTICS – AI-NATIVE TEXTBOOK',
-  tagline: 'ROS 2 • Gazebo • Isaac • Digital Twin • Vision-Language-Action Robotics',
+  tagline:
+    'ROS 2 • Gazebo • Isaac • Digital Twin • Vision-Language-Action Robotics',
   favicon: 'img/favicon.ico',
 
-  url: 'https://niba-khan.github.io',
-  baseUrl: '/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/',
+  // ✅ VERCEL CONFIG
+  url: 'https://hackathon-i-physical-ai-humanoid-ro-six.vercel.app',
+  baseUrl: '/',
 
   organizationName: 'Niba-khan',
   projectName: 'Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook',
@@ -24,43 +28,23 @@ const config = {
       'classic',
       {
         docs: {
-          // @ts-ignore
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/Niba-khan/Hackathon-I-Physical-AI-Humanoid-Robotics-Textbook/tree/main/',
-          // Add the chatbot integration script
-          beforeDefaultRemarkPlugins: [],
         },
         blog: {
           showReadingTime: true,
         },
         theme: {
-          // @ts-ignore
           customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
   ],
 
-  // Add the chatbot integration script to be loaded on all pages
-  themes: [],
-  plugins: [
-    // Add the chatbot script to be included on all pages
-    () => ({
-      name: 'chatbot-plugin',
-      injectHtmlTags: () => ({
-        postBodyTags: [`<script src="/js/chat-embed.js"></script>`],
-      }),
-    }),
-  ],
-
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
-    colorMode: {
-      defaultMode: 'light',
-      disableSwitch: false,
-      respectPrefersColorScheme: true,
-    },
+
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
       logo: {
@@ -117,6 +101,12 @@ const config = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics – AI-Native Textbook.`,
+    },
+
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
     },
   },
 };
